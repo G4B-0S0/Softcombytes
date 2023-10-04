@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
     overflow: hidden;
+}
+
+h1 {
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -60,4 +69,11 @@ body, html {
 @keyframes rotate {
     0% { transform: rotateX(0deg) rotateY(0deg); }
     100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+p {
+    font-family: 'Marvel';
+    font-weight: 400;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
 }
