@@ -1,32 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body, html {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+*{ 
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    font-family: 'Dosis';
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
+body {
+  background: #1B3752;
 }
 
-.container {
-    perspective: 1200px;
-    width: 100%;
-    height: 100%;
+section {
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.container-cube {
+    /*width: auto;*/
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+  position: relative;
+  padding: 50px;
 }
 
 .cube {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
-    animation: rotate 5s linear infinite;
+    animation: rotate 30s linear infinite;
 }
 
 .top, .bottom { 
@@ -48,8 +53,8 @@ h1 {
 
 .face {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     /*background-color: rgba(0, 0, 0, 0.5);*/
     border: 2px solid #fff;
     display: flex;
@@ -59,21 +64,24 @@ h1 {
     font-weight: bold;
 }
 
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+.front  { transform: rotateY(0deg) translateZ(52px); }
+.back   { transform: rotateY(180deg) translateZ(52px); }
+.left   { transform: rotateY(-90deg) translateZ(52px); }
+.right  { transform: rotateY(90deg) translateZ(52px); }
+.top    { transform: rotateX(90deg) translateZ(52px); }
+.bottom { transform: rotateX(-90deg) translateZ(52px); }
 
 @keyframes rotate {
     0% { transform: rotateX(0deg) rotateY(0deg); }
-    100% { transform: rotateX(360deg) rotateY(360deg); }
+    100% { transform: rotateX(180deg) rotateY(180deg); }
+}
+
+h1 {
+  font-family: 'Marvel';
+  margin: 0
 }
 
 p {
-    font-family: 'Marvel';
-    font-weight: 400;
-    font-size: 18px;
-    /*text-transform: uppercase;*/
+  font-family: 'Dosis';
+  margin: 0;
 }
