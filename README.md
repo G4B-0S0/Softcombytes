@@ -14,4 +14,4 @@
 >Esto es una alerta
 
 
-<img style="fill: #fff;" src="https://softcombytes.com/img/logo.svg" alt="Softcombytes">
+<img src="https://softcombytes.com/img/logob.svg" alt="Softcombytes">
