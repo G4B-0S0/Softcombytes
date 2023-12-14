@@ -12,3 +12,6 @@
 
 >[!CAUTION]
 >Esto es una alerta
+
+
+<img src="https://softcombytes.com/img/logo.svg" alt="Softcombytes">
